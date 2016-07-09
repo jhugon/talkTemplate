@@ -67,3 +67,41 @@
 }
 \makeatother
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\hugonfirstpage}{%
+  \begin{frame}
+    \maketitle
+  \vspace{-1em}
+    \includegraphics[height=12mm]{/home/jhugon/Pictures/officialImages/Lariat_Logo.jpg}
+    \hfill
+    \includegraphics[height=16mm]{/home/jhugon/Pictures/officialImages/lsu/LSU_Full_Name_Purple_RGB.pdf}
+  \end{frame}
+  
+  \makeatletter
+  \setbeamertemplate{footline}
+  {
+      \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
+      \end{beamercolorbox}
+      \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+        leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
+        \leavevmode{\usebeamerfont{author in head/foot}\insertshortauthor}%
+        \hfill%
+        {\usebeamerfont{institute in head/foot}\usebeamercolor[fg]{institute in head/foot}\insertshortinstitute}%
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+        leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+        {\usebeamerfont{title in head/foot}\insertshorttitle \hfill \insertframenumber}%
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+      \end{beamercolorbox}
+  }
+  \makeatother
+  
+  \author{Justin Hugon, Louisiana State University}
+} % hugonFirstPage
