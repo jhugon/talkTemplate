@@ -15,7 +15,8 @@
 \RequirePackage{colortbl}
 \RequirePackage{beamerthemesplit}
 \usetheme{Berlin}
-\usecolortheme{beaver}
+%\usecolortheme{beaver}
+\usecolortheme{tigers}
 \RequirePackage{hyperref}
 \RequirePackage{ulem}
 \RequirePackage{multirow}
