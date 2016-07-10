@@ -74,13 +74,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\hugonfirstpage}{%
+\newcommand{\lariatlogos}{%
+  \vspace{-1em}
+    \includegraphics[height=13mm]{/home/jhugon/Pictures/officialImages/Lariat_Logo.jpg}
+    \hfill
+    \includegraphics[height=14mm]{/home/jhugon/Pictures/officialImages/lsu/LSU_Full_Name_Purple_RGB_eps.pdf}
+}
+
+\newcommand{\dunelogos}{%
+  \vspace{-1em}
+    \includegraphics[height=16mm]{/home/jhugon/Pictures/officialImages/dune/DUNElogo_color.pdf}
+    \hfill
+    \includegraphics[height=14mm]{/home/jhugon/Pictures/officialImages/lsu/LSU_Full_Name_Purple_RGB_eps.pdf}
+}
+
+\newcommand{\hugontitlepage}[1]{% the argument is the content to go below the title on the title page
   \begin{frame}
     \maketitle
-  \vspace{-1em}
-    \includegraphics[height=12mm]{/home/jhugon/Pictures/officialImages/Lariat_Logo.jpg}
-    \hfill
-    \includegraphics[height=16mm]{/home/jhugon/Pictures/officialImages/lsu/LSU_Full_Name_Purple_RGB.pdf}
+    #1
   \end{frame}
   
   \makeatletter
